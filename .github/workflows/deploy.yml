@@ -22,6 +22,12 @@ on:
         required: true
         type: string
     secrets:
+      QUAY_PASSWORD:
+        description: 'needed for registry login'
+        required: false
+      QUAY_USERNAME:
+        description: 'needed for registry login'
+        required: false
       REDHAT_PASSWORD:
         description: 'needed for registry login'
         required: false
@@ -54,7 +60,7 @@ jobs:
         with:
           registry: quay.io
           username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.REDHAT_PASSWORD }}
+          password: ${{ secrets.QUAY_PASSWORD }}
 
       - name: Log in to registry.redhat.io
         id: registry-redhat
