@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - 'f5_ee/**'
+      - 'f5_execution_environment/**'
 
   # Schedule workflow run at 00:00 on Sunday
   schedule:
