@@ -22,7 +22,7 @@ jobs:
   call-deploy-workflow:
     uses:  VDI-Tech-Guy/f5-execution-engines/.github/workflows/deploy.yml@main
     with:
-      EE_FOLDER_NAME: 'f5_ee'
+      EE_FOLDER_NAME: 'f5_execution_environment'
       EE_IMAGE_TAG: 'latest'
       QUAY_USER: 'mmabis89'
     secrets:
