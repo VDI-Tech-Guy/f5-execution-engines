@@ -1,7 +1,0 @@
----
-collections:
-  - ansible.utils
-  - ansible.posix
-  - awx.awx
-  - cloin.datadog
-  - cloin.prometheus
