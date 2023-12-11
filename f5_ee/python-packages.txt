@@ -1,7 +1,10 @@
-ipaddress; python_version < '3.5'
 cryptography
 objectpath
 ordereddict
 simplejson
+paramiko
+jinja2
+netaddr
+packaging
 jmespath # for json_query plugin in community.general
 lxml
