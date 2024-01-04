@@ -1,0 +1,13 @@
+---
+collections:
+  - name: f5networks.f5_modules
+    version: 1.27.1
+  - name: f5networks.f5_bigip
+    version: 3.2.2
+  - ansible.utils
+  - ansible.posix
+  - ansible.netcommon
+  - ansible.posix
+  - community.docker
+  - community.general
+  - containers.podman
