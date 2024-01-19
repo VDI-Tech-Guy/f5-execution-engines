@@ -1,0 +1,18 @@
+---
+collections:
+  - arista.eos
+  - ansible.utils
+  - ansible.posix
+  - ansible.windows
+  - ansible.netcommon
+  - ansible.posix
+  - community.docker
+  - community.general
+  - community.network
+  - community.vmware
+  - containers.podman
+  - name: dellemc.openmanage
+    version: 2.1.0
+  - f5networks.f5_bigip
+  - f5networks.f5_modules
+  - vmware.vmware_rest 
