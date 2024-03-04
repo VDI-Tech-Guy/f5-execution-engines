@@ -8,7 +8,7 @@ collections:
   - ansible.posix
   - ansible.netcommon
   - ansible.posix
-  - ansible.controller
+  - awx.awx
   - community.docker
   - community.general
   - containers.podman
