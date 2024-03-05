@@ -8,8 +8,7 @@ collections:
   - ansible.posix
   - ansible.netcommon
   - ansible.posix
-  - name: ansible.controller
-    source: https://console.redhat.com/api/automation-hub/
+  - awx.awx
   - community.docker
   - community.general
   - containers.podman
