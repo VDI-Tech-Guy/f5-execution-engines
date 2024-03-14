@@ -1,0 +1,15 @@
+---
+collections:
+  - f5networks.f5_modules
+  - f5networks.f5_bigip
+  - name: f5networks.next
+    source: https://github.com/F5Networks/f5-ansible-next#ansible_collections/f5networks/next
+    type: git
+    version: devel
+  - ansible.utils
+  - ansible.posix
+  - ansible.netcommon
+  - ansible.posix
+  - community.docker
+  - community.general
+  - containers.podman
