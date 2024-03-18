@@ -7,7 +7,6 @@ images:
 dependencies:
     galaxy: ansible-collections.yml
     python: python-packages.txt
-    system: system-packages.txt
     
 additional_build_files:
     # Can be used to resolve collections from private automation hub
@@ -19,6 +18,10 @@ options:
     package_manager_path: /usr/bin/microdnf
 
 additional_build_steps:
+    append:
+        - RUN curl "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/whois-5.5.9-3.el9.x86_64.rpm" -o "/whois-5.5.9-3.el9.x86_64.rpm"
+        - RUN microdnf install -y /whois-5.5.9-3.el9.x86_64.rpm
+
     prepend_base:
         - RUN $PYCMD -m pip install --upgrade pip setuptools
     prepend_galaxy:
