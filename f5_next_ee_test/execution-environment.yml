@@ -18,11 +18,9 @@ options:
     package_manager_path: /usr/bin/microdnf
 
 additional_build_steps:
-    append:
-        - RUN curl "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/whois-5.5.9-3.el9.x86_64.rpm" -o "/whois-5.5.9-3.el9.x86_64.rpm"
-        - RUN microdnf install -y /whois-5.5.9-3.el9.x86_64.rpm
-
     prepend_base:
+        - RUN curl "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/whois-5.5.9-3.el9.x86_64.rpm" -o "/whois-5.5.9-3.el9.x86_64.rpm"
+        - RUN microdnf install -y /
         - RUN $PYCMD -m pip install --upgrade pip setuptools
     prepend_galaxy:
         # Add custom ansible.cfg which defines collection install sources
@@ -33,4 +31,4 @@ additional_build_steps:
         # Use the above ARG to define an environment variable holding
         # the token for resolving private collections
         - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN=$AH_TOKEN
-        #
+        
