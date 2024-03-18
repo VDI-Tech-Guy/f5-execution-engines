@@ -13,3 +13,5 @@ collections:
   - community.docker
   - community.general
   - containers.podman
+  - community.vmware
+  - vmware.vmware_rest
