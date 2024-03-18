@@ -8,4 +8,3 @@ netaddr
 packaging
 jmespath # for json_query plugin in community.general
 lxml
-mkpasswd # Test for mkpasswd
