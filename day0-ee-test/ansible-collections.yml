@@ -16,7 +16,7 @@ collections:
   - cisco.intersight
   - cisco.ios
   - cisco.ise
-  - cisco.acimeraki
+  - cisco.meraki
   - cisco.mso
   - cisco.nso
   - cisco.nxos
