@@ -18,6 +18,7 @@ click
 commonmark
 cryptography
 decorator
+deepdiff
 docker
 docutils
 dumb-init
@@ -29,17 +30,19 @@ gssapi
 idna
 importlib-resources
 ipaddress
+isodate
 jinja2
 jmespath
 jsonschema
 jxmlease
 lockfile
 lxml
-MarkupSafe
+markupSafe
 multidict
 mypy-extensions
 ncclient
 netaddr
+netapp-lib
 nsx-policy-python-sdk
 nsx-python-sdk
 nsx-vmc-aws-integration-python-sdk
@@ -77,6 +80,7 @@ ruamel.yaml
 ruamel.yaml.clib
 simplejson
 six
+solidfire-sdk-python
 subprocess-tee
 textfsm
 toml
