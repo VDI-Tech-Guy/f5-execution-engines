@@ -5,7 +5,7 @@ collections:
   - name: f5networks.next
     source: https://github.com/F5Networks/f5-ansible-next#ansible_collections/f5networks/next
     type: git
-    version: devel
+    version: main
   - ansible.utils
   - ansible.posix
   - ansible.netcommon
