@@ -2,10 +2,7 @@
 collections:
   - f5networks.f5_modules
   - f5networks.f5_bigip
-  - name: f5networks.next
-    source: https://github.com/F5Networks/f5-ansible-next#ansible_collections/f5networks/next
-    type: git
-    version: main
+  - f5networks.next
   - ansible.utils
   - ansible.posix
   - ansible.netcommon
@@ -16,4 +13,4 @@ collections:
   - community.vmware
   - vmware.vmware_rest
 
-#Update Latest 06-20-2024
+#Update Latest 07-25-2024 - Use Galaxy Collection instead 
