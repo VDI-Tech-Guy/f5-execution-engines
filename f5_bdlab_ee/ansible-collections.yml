@@ -16,5 +16,7 @@ collections:
     version: 2.1.0
   - f5networks.f5_bigip
   - f5networks.f5_modules
+  - f5networks.next
+  - microsoft.ad
   - vmware.vmware_rest 
   - dellemc.os9
