@@ -10,6 +10,7 @@ collections:
   - community.general
   - community.network
   - community.vmware
+  - community.windows
   - containers.podman
   - name: dellemc.openmanage
     version: 2.1.0
