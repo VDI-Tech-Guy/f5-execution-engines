@@ -19,7 +19,7 @@ options:
 
 additional_build_steps:
     prepend_base:
-        - RUN $PYCMD -m pip install --upgrade pip setuptools
+        #- RUN $PYCMD -m pip install --upgrade pip setuptools
         - RUN $PYCMD -m pip install --upgrade --force-reinstall pyopenssl
     prepend_galaxy:
         # Add custom ansible.cfg which defines collection install sources
