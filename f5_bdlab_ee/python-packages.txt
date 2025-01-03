@@ -9,3 +9,4 @@ packaging
 jmespath # for json_query plugin in community.general
 lxml
 omsdk
+pyvmomi
