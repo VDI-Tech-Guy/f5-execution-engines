@@ -1,0 +1,13 @@
+---
+collections:
+  - f5networks.f5_bigip
+  - f5networks.f5_modules
+  - f5networks.next
+  - f5networks.f5os
+  - ansible.utils
+  - ansible.posix
+  - ansible.netcommon
+  - ansible.posix
+  - community.docker
+  - community.general
+  - containers.podman
