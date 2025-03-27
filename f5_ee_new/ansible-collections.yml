@@ -11,4 +11,6 @@ collections:
   - community.docker
   - community.general
   - containers.podman
-# compiled 03-19-2025
+  - community.vmware
+
+# compiled 03-26-2025
