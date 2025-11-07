@@ -107,7 +107,4 @@ collections:
   - vultr.cloud
   - vyos.vyos
   - wti.remote
-  - name: f5networks.next
-    source: https://github.com/F5Networks/f5-ansible-next#ansible_collections/f5networks/next
-    type: git
-    version: devel
+  # Updated 11/6/2025
