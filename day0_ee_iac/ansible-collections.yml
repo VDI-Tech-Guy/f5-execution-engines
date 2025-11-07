@@ -1,0 +1,29 @@
+---
+collections:
+  - azure.azcollection
+  - ansible.controller
+  - ansible.netcommon
+  - ansible.platform
+  - ansible.posix
+  - ansible.utils
+  - amazon.aws
+  - amazon.cloud
+  - awx.awx
+  - cloud.terraform
+  - community.aws
+  - community.azure
+  - community.docker
+  - community.general
+  - community.kubernetes
+  - community.proxmox
+  - community.vmware
+  - containers.podman
+  - f5networks.f5_bigip
+  - f5networks.f5_modules
+  - f5networks.f5os
+  - google.cloud
+  - redhat.openshift
+  - servicenow.itsm
+
+# compiled 08-19-2025
+# This build contains AWS/F5/GCP/OpenShift/vSphere/
