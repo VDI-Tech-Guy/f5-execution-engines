@@ -18,6 +18,7 @@ options:
     package_manager_path: /usr/bin/microdnf
 
 additional_build_steps:
+<<<<<<< HEAD
     prepend_base:
         - RUN $PYCMD -m pip install --upgrade pip setuptools
     prepend_galaxy:
@@ -29,3 +30,10 @@ additional_build_steps:
         # Use the above ARG to define an environment variable holding
         # the token for resolving private collections
         - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN=$AH_TOKEN
+=======
+  prepend: |
+    RUN pip3 install --upgrade pip setuptools
+  # append: |
+  #   LABEL quay.expires-after="45d"
+ 
+>>>>>>> upstream/main
