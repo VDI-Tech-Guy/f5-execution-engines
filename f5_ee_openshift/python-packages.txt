@@ -1,0 +1,14 @@
+cryptography
+objectpath
+ordereddict
+simplejson
+paramiko
+jinja2
+netaddr
+packaging
+lxml
+kubernetes>=24.2.0
+openshift>=0.13.1
+requests>=2.28.0
+PyYAML>=6.0
+jmespath>=1.0.1
