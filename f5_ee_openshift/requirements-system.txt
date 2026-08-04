@@ -1,0 +1,5 @@
+# requirements-system.txt
+# System packages installed in the EE container image
+
+cifs-utils
+krb5-workstation
