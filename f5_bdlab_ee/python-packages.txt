@@ -11,3 +11,4 @@ lxml
 omsdk
 pyvmomi
 dnspython
+passlib
