@@ -1,1 +1,4 @@
+# requirements-system.txt
 ansible-core [platform:rpm]
+fping [platform:rpm]
+nmap [platform:rpm]
