@@ -4,32 +4,35 @@ images:
   base_image:
     name: registry.redhat.io/ansible-automation-platform-25/ee-minimal-rhel9:latest
     # registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:latest
- 
+
 dependencies:
   galaxy: ansible-collections.yml
   python: python-packages.txt
   system: requirements-system.txt
- 
+
 additional_build_files:
   # Can be used to resolve collections from private automation hub
   - src: ansible.cfg
     dest: configs
- 
- 
+  # EPEL repo definition — needed because fping isn't in RHEL9
+  # AppStream/BaseOS, and microdnf can't install epel-release
+  # directly from a remote RPM URL like dnf can.
+  - src: epel.repo
+    dest: configs
+
+
 options:
   package_manager_path: /usr/bin/microdnf
- 
+
 additional_build_steps:
-  append_base:
-    # Enable EPEL so fping (not in RHEL9 AppStream/BaseOS) can be
-    # resolved by requirements-system.txt below.
-    - RUN $PKGMGR install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
- 
   prepend_base:
+    # Register EPEL before system deps (requirements-system.txt) are
+    # resolved, so fping can be found.
+    - ADD _build/configs/epel.repo /etc/yum.repos.d/epel.repo
     # - RUN $PYCMD -m pip install --upgrade pip setuptools
     - RUN $PYCMD -m pip install --upgrade --force-reinstall pyopenssl
     - RUN $PYCMD -m pip install --upgrade ansible
- 
+
   prepend_galaxy:
     # Add custom ansible.cfg which defines collection install sources
     - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg
@@ -39,4 +42,3 @@ additional_build_steps:
     # Use the above ARG to define an environment variable holding
     # the token for resolving private collections
     - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN=$AH_TOKEN
- 
